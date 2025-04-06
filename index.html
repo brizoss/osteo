@@ -1,660 +1,630 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabinet d'Ostéopathie | Praticien Murria Frédéric</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://rdv.terapiz.com/osteopathe/pinet/frederic-murria">
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .animate-fadeIn {
-            animation: fadeIn 1s ease-out forwards;
-        }
-        
-        .header-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1576091160399-112ba822d05d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gîtes de Pinet - Location saisonnière dans l'Hérault</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://gestion-gites-pinet.netlify.app/IMG_20210407_105254.jpg');
             background-size: cover;
             background-position: center;
-            min-height: 80vh;
         }
         
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        .gite-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
-        .service-card {
-            transition: all 0.3s ease;
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
         }
         
-        .form-input:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px #3b82f6;
+        .availability-calendar .available {
+            background-color: #4ade80;
+            color: white;
+        }
+        
+        .availability-calendar .booked {
+            background-color: #f87171;
+            color: white;
         }
     </style>
 </head>
-<body class="font-sans text-gray-800">
-    <!-- Header -->
-    <header class="header-bg text-white">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">
-                <span class="text-blue-400">Praticien</span> <span class="text-white">Frederic Murria</span>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#accueil" class="hover:text-blue-300 transition">Accueil</a>
-                <a href="#approche" class="hover:text-blue-300 transition">Mon Approche</a>
-                <a href="#services" class="hover:text-blue-300 transition">Services</a>
-                <a href="#consultation" class="hover:text-blue-300 transition">Consultation</a>
-                <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
-            </div>
-            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </nav>
-        
-        <!-- Menu mobile -->
-        <div class="md:hidden hidden bg-gray-900 w-full px-6 py-4" id="mobile-menu">
-            <div class="flex flex-col space-y-4">
-                <a href="#accueil" class="hover:text-blue-300 transition">Accueil</a>
-                <a href="#approche" class="hover:text-blue-300 transition">Mon Approche</a>
-                <a href="#services" class="hover:text-blue-300 transition">Services</a>
-                <a href="#consultation" class="hover:text-blue-300 transition">Consultation</a>
-                <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
-            </div>
-        </div>
-        
-        <!-- Hero section -->
-        <div class="container mx-auto px-6 flex flex-col justify-center items-start pt-32 pb-20 animate-fadeIn">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Ostéopathe à Pinet</h1>
-			
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl">
-			<p>le Manipulateur radio</p>
-			
-Avec une carrière enrichissante de 23 ans en tant que manipulateur radio, j'ai côtoyer des milliers de patients, rencontrant une diversité de pathologies qui ont forgé une expertise considérable en sémio pathologie. Mon parcours a débuté avec l'utilisation du tube colonne dans plusieurs cabinets de radiologie, me permettant de déceler, avec la meilleure incidence possible, des traits fracturaires à travers tout le corps, mais aussi des pathologies diverses et variées comme par exemple cardio-vasculaire ou pulmonaire.
-
-
-L'évolution vers des modalités telles que le scanner et l'IRM a élargi mon horizon, explorant les différents systèmes qui composent notre organisme, que ce soit en gastro-entérologie, en urologie, en vasculaire, et au-delà. J'ai participé activement à des procédures variées, allant des coronarographies aux coroscanner, des examens vasculaires aux blocs opératoires. Mon expérience s'étend également à la médecine nucléaire et à la radiothérapie.
-
-
-Partageant une collaboration étroite avec les médecins radiologues et rhumatologues, j'ai perfectionné la préparation des infiltrations épidurales et articulaires, ainsi que des arthrographies. Mon parcours reflète une polyvalence unique, où j'ai développé des compétences approfondies en anatomie, offrant une compréhension holistique du corps humain.</p>
-
-<p> </p>
-
-<p>L'Osteopathe</p>
-
-Aujourd'hui, en tant que professionnel de l'ostéopathie, cette expérience diversifiée me permet d'apporter une approche unique et complète à la prise en charge de la douleur. Mon bagage médical constitue une base solide pour comprendre et traiter efficacement une gamme variée de conditions. Bienvenue dans un univers où l'expertise en anatomie rencontre la compassion thérapeutique.
-
-
-Depuis trois ans à présent, j'ai consacré exclusivement mon expertise au métier d'ostéopathe, où j'ai pu plonger profondément dans la compréhension de la biomécanique humaine.
-
-
-Cette transition m'a permis d'explorer diverses dimensions de la santé, allant de la rééducation au reboutement, en passant par différentes techniques de réflexologie. Mon engagement dans le domaine de l'ostéopathie s'est concentré sur la compréhension et le traitement des troubles musculosquelettiques, ainsi que des désordres neuro-végétatifs.
-
-
-Chaque jour, je mets à profit cette expérience diversifiée pour offrir à mes patients une approche holistique de la santé. Ma pratique en ostéopathie va au-delà de la simple réduction de la douleur, s'attachant à rétablir l'équilibre global du corps et à favoriser le bien-être. Bienvenue dans mon univers, où la fusion de compétences médicales avancées et d'une approche thérapeutique attentionnée ouvre la voie à une vie plus saine et équilibrée. ici ont traite le symptôme avant tout et tout simplement.
-            
-			
-			
-			
-			<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">Prendre rendez-vous</a>
-                <a href="#consultation" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">Tarifs & Infos</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Section approche -->
-    <section id="approche" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-                    <img src="https://images.unsplash.com/photo-1551601651-bc60f254d532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="MURRIA Frédéric" class="rounded-lg shadow-xl w-full">
-                </div>
-                <div class="lg:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Mon Approche Thérapeutique</h2>
-                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
-                    <p class="text-gray-600 mb-6">Diplômée de l'Institut Supérieur d'Ostéopathie de Lyon et praticienne depuis 12 ans, je propose une ostéopathie douce et respectueuse du corps.</p>
-                    
-                    <div class="mb-8">
-                        <div class="flex items-start mb-4">
-                            <div class="text-blue-600 mr-4 mt-1">
-                                <i class="fas fa-check-circle text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Écoute active</h3>
-                                <p class="text-gray-600">Chaque consultation commence par un bilan complet pour comprendre votre histoire et vos besoins spécifiques.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start mb-4">
-                            <div class="text-blue-600 mr-4 mt-1">
-                                <i class="fas fa-check-circle text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Techniques adaptées</h3>
-                                <p class="text-gray-600">J'utilise principalement des méthodes douces (fasciales, crâniennes, viscérales) particulièrement adaptées aux nourrissons, femmes enceintes et seniors.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="text-blue-600 mr-4 mt-1">
-                                <i class="fas fa-check-circle text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Suivi personnalisé</h3>
-                                <p class="text-gray-600">Chaque traitement est unique et fait l'objet de conseils personnalisés pour prolonger les bénéfices entre les séances.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">Formations complémentaires</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li>Ostéopathe du sport</li>
-                            <li>Fasciathérapeute , approche tissulaire (L’approche tissulaire de Pierre Tricot
-
-L’approche fasciale ou myofasciale
-
-L’approche biodynamique (Jealous, Sutherland)
-
-L’approche somato-émotionnelle (Upledger, Barral)
-
-Les techniques de relâchement positionnel (Strain-Counterstrain)</li>
-                            <li>Traitement des troubles temporo-mandibulaires</li>
-                            <li>Ostéopathie et sport de haut niveau</li>
-							<li>Application de K-taping<li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section services -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Domaines d'Intervention</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="max-w-2xl mx-auto text-gray-600">L'ostéopathie peut vous accompagner dans de nombreuses situations.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-baby text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Enfants de plus de 3 ans</h3>
-                    <p class="text-gray-600 mb-4"></p>
-                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800 transition">En savoir plus →</a>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-female text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Femmes Enceintes</h3>
-                    <p class="text-gray-600 mb-4">Préparation à l'accouchement, douleurs lombaires, sciatalgie, troubles digestifs, suivi post-partum...</p>
-                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800 transition">En savoir plus →</a>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-running text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Sportifs</h3>
-                    <p class="text-gray-600 mb-4">Prévention des blessures, amélioration des performances, récupération, entorses, tendinites, pubalgies...</p>
-                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800 transition">En savoir plus →</a>
-                </div>
-                
-                <!-- Service 4 -->
-                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-user-md text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Adultes</h3>
-                    <p class="text-gray-600 mb-4">Lombalgies, cervicalgies, migraines, troubles digestifs, stress, fatigue chronique, troubles du sommeil...</p>
-                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800 transition">En savoir plus →</a>
-                </div>
-                
-                <!-- Service 5 -->
-                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-wheelchair text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Seniors</h3>
-                    <p class="text-gray-600 mb-4">Arthrose, raideurs articulaires, troubles de l'équilibre, prévention des chutes, amélioration de la mobilité...</p>
-                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800 transition">En savoir plus →</a>
-                </div>
-                
-                <!-- Service 6 -->
-                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-home text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">À Domicile</h3>
-                    <p class="text-gray-600 mb-4">Consultation à domicile possible pour les personnes à mobilité réduite ou situations particulières.</p>
-                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 transition">Me contacter →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section consultation -->
-    <section id="consultation" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Informations Pratiques</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="max-w-2xl mx-auto text-gray-600">Tout ce que vous devez savoir avant votre consultation.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Tarifs -->
-                <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
-                    <h3 class="text-2xl font-bold mb-6 text-center">Tarifs</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between border-b border-gray-200 pb-2">
-                            <span>Consultation adulte</span>
-                            <span class="font-semibold">60€</span>
-                        </div>
-                        <div class="flex justify-between border-b border-gray-200 pb-2">
-                            <span>Consultation enfant (-12 ans)</span>
-                            <span class="font-semibold">50€</span>
-                        </div>
-                        <div class="flex justify-between border-b border-gray-200 pb-2">
-                            <span>Consultation à domicile</span>
-                            <span class="font-semibold">80€</span>
-                        </div>
-                        
-                    </div>
-                    <div class="mt-6 text-sm text-gray-500">
-                        <p>Règlement par chèque ou espèces ou virement(wero). Pas de carte bancaire.</p>
-                    </div>
-                </div>
-                
-                <!-- Remboursement -->
-                <div class="bg-blue-50 p-8 rounded-lg border border-blue-100">
-                    <h3 class="text-2xl font-bold mb-6 text-center">Remboursement</h3>
-                    <div class="space-y-4">
-                        <p class="text-gray-700">Les séances d'ostéopathie ne sont pas prises en charge par la Sécurité Sociale, mais de nombreuses mutuelles proposent un remboursement partiel ou total.</p>
-                        <p class="text-gray-700">Je vous fournis une facture sur demande pour faciliter votre démarche de remboursement.</p>
-                    </div>
-                    <div class="mt-6">
-                        <h4 class="font-semibold mb-2">Mutuelle partenaire :</h4>
-                        <p class="text-sm text-gray-600">Harmonie Mutuelle - 100% remboursé après 3 séances/an</p>
-                    </div>
-                </div>
-                
-                <!-- Déroulement -->
-                <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
-                    <h3 class="text-2xl font-bold mb-6 text-center">Déroulement</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="text-blue-600 mr-3 mt-1">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Durée</h4>
-                                <p class="text-gray-600 text-sm">50 minutes en moyenne (1h pour la 1ère consultation)</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="text-blue-600 mr-3 mt-1">
-                                <i class="fas fa-file-medical"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">À apporter</h4>
-                                <p class="text-gray-600 text-sm">Examens médicaux récents (radiographies, bilans...)</p>
-								<p class="text-gray-600 text-sm">Une serviette de bain personnelle (format plage)</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="text-blue-600 mr-3 mt-1">
-                                <i class="fas fa-tshirt"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Tenue</h4>
-                                <p class="text-gray-600 text-sm">Prévoyez une tenue confortable (type leggings et t-shirt)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-6 text-sm text-gray-500">
-                        <p>Annulation : merci de prévenir au moins 24h à l'avance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section témoignages -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ils m'ont fait confiance</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="max-w-2xl mx-auto text-gray-600">Retours d'expérience de patients.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Témoignage 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="flex mb-4 text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6">"Après 10 ans de migraines chroniques et de nombreux traitements infructueux, le Dr. Martin a identifié l'origine de mes troubles. En 3 séances, j'ai retrouvé une qualité de vie que je pensais perdue."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Claire T." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-semibold">Claire T.</h4>
-                            <p class="text-gray-500 text-sm">Patient depuis 2019</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Témoignage 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="flex mb-4 text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6">"Notre bébé de 3 mois avait des difficultés à tourner la tête d'un côté. Le Dr. Martin a été incroyablement douce avec lui. En deux séances, le problème était résolu. Nous la recommandons vivement !"</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
-                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Élodie P." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-semibold">Élodie P.</h4>
-                            <p class="text-gray-500 text-sm">Maman de Noah</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Témoignage 3 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="flex mb-4 text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6">"En tant que marathonien, je consulte régulièrement pour prévenir les blessures. Le Dr. Martin a une connaissance pointue de l'anatomie du sportif. Ses conseils post-traitement sont toujours très pertinents."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
-                            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Thomas R." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-semibold">Thomas R.</h4>
-                            <p class="text-gray-500 text-sm">Athlète amateur</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section contact -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Prendre Rendez-vous</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="max-w-2xl mx-auto text-gray-600">Contactez-moi pour toute question ou pour planifier une consultation.</p>
-            </div>
-            
-            <div class="flex flex-col lg:flex-row">
-                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-                    <h3 class="text-2xl font-bold mb-6">Coordonnées</h3>
-                    
-                    <div class="mb-8">
-                        <div class="flex items-start mb-6">
-                            <div class="text-blue-600 mr-4 mt-1">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold mb-1">Adresse</h4>
-                                <p class="text-gray-600">21 Avenue de Pomerols<br>34850,Pinet France</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start mb-6">
-                            <div class="text-blue-600 mr-4 mt-1">
-                                <i class="fas fa-phone-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold mb-1">Téléphone</h4>
-                                <p class="text-gray-600">06 70 60 59 84</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start mb-6">
-                            <div class="text-blue-600 mr-4 mt-1">
-                                <i class="fas fa-envelope text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold mb-1">Email</h4>
-                                <p class="text-gray-600">contact@osteomagazine.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="text-blue-600 mr-4 mt-1">
-                                <i class="fas fa-clock text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold mb-1">Horaires</h4>
-                                <p class="text-gray-600">Lundi - Vendredi: 8h30 - 19h<br>Samedi: 9h - 13h<br>Dimanche: Fermé</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold mb-6">Accès</h3>
-                    <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.3924542194036!2d3.5106874607207956!3d43.40550554045655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b139d406c92163%3A0xb58d20dd10d4776!2sMURRIA%20Fr%C3%A9d%C3%A9ric%20Ost%C3%A9opathe%20D.O%20au%20FORUM%20MEDICAL%20%C3%A0%20PINET!5e0!3m2!1sfr!2sfr!4v1743876191880!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                
-                <div class="lg:w-1/2">
-                    <h3 class="text-2xl font-bold mb-6">Formulaire de Contact</h3>
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="firstname" class="block text-gray-700 font-medium mb-2">Prénom</label>
-                                <input type="text" id="firstname" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" placeholder="Votre prénom" required>
-                            </div>
-                            <div>
-                                <label for="lastname" class="block text-gray-700 font-medium mb-2">Nom</label>
-                                <input type="text" id="lastname" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" placeholder="Votre nom" required>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" id="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" placeholder="Votre email" required>
-                        </div>
-                        
-                        <div>
-                            <label for="phone" class="block text-gray-700 font-medium mb-2">Téléphone</label>
-                            <input type="tel" id="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" placeholder="Votre numéro" required>
-                        </div>
-                        
-                        <div>
-                            <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
-                            <select id="subject" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" required>
-                                <option value="">Sélectionnez un sujet</option>
-                                <option value="rdv">Prise de rendez-vous</option>
-                                <option value="info">Demande d'information</option>
-                                <option value="urgence">Demande urgente</option>
-                                <option value="autre">Autre demande</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                            <textarea id="message" rows="5" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" placeholder="Décrivez votre demande et vos disponibilités..." required></textarea>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="flex items-center h-5">
-                                <input id="consent" type="checkbox" class="form-checkbox h-4 w-4 text-blue-600 transition" required>
-                            </div>
-                            <div class="ml-3 text-sm">
-                                <label for="consent" class="text-gray-700">J'accepte que mes données soient utilisées pour répondre à ma demande (conformément au RGPD).</label>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold w-full transition duration-300">Envoyer le message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">
-                        <span class="text-blue-400">Praticien</span>  <span class="text-white">Frédéric Murria</span>
-                    </h3>
-                    <p class="text-gray-400">Ostéopathe D.O. diplômée ISOGM-</p>
-                    <p class="text-gray-400 mt-2"></p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#accueil" class="text-gray-400 hover:text-blue-400 transition">Accueil</a></li>
-                        <li><a href="#approche" class="text-gray-400 hover:text-blue-400 transition">Mon Approche</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-blue-400 transition">Services</a></li>
-                        <li><a href="#consultation" class="text-gray-400 hover:text-blue-400 transition">Consultation</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-blue-400 transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Informations</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Mentions légales</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Politique de confidentialité</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">CGU</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <address class="not-italic text-gray-400">
-                        <p class="mb-2">21 avenue de Pomerols</p>
-                        <p class="mb-2">34850 Pinet, France</p>
-                        <p class="mb-2">Tél: 06 70 60 59 84</p>
-                        <p class="mb-4">Email: contact@osteomagazine.com</p>
-						 <p class="mb-4">Site internet , blog, https://www.osteomagazine.com//</p>
-                    </address>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-facebook-f text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-instagram text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-linkedin-in text-xl"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; Praticien - Ostéopathe D.O. à Pinet. Tous droits réservés.</p>
-                <p class="mt-2 text-sm">Site réalisé par [MURRIA Frédéric]</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bouton retour en haut -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition hidden">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script>
-        // Menu mobile
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Bouton retour en haut
-        const backToTopButton = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('hidden');
-            } else {
-                backToTopButton.classList.add('hidden');
-            }
-        });
-        
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        
-        // Animation au défilement
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.service-card, .animate-fadeIn');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (elementPosition < screenPosition) {
-                    element.classList.add('animate-fadeIn');
-                }
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16">
+<div class="flex items-center">
+<a class="flex-shrink-0 flex items-center" href="#">
+<i class="fas fa-wine-glass-alt text-2xl text-amber-800 mr-2"></i>
+<span class="text-xl font-bold text-gray-800">Gîtes de Pinet</span>
+</a>
+</div>
+<div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+<a class="text-gray-900 hover:text-amber-700 px-3 py-2 text-sm font-medium" href="#accueil">Accueil</a>
+<a class="text-gray-900 hover:text-amber-700 px-3 py-2 text-sm font-medium" href="#gites">Nos Gîtes</a>
+<a class="text-gray-900 hover:text-amber-700 px-3 py-2 text-sm font-medium" href="#activites">À voir/faire</a>
+<a class="text-gray-900 hover:text-amber-700 px-3 py-2 text-sm font-medium" href="#avis">Avis</a>
+<a class="text-gray-900 hover:text-amber-700 px-3 py-2 text-sm font-medium" href="#contact">Contact</a>
+<a class="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-md text-sm font-medium" href="#reservation">Réserver</a>
+</div>
+<div class="-mr-2 flex items-center md:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500" type="button">
+<span class="sr-only">Open main menu</span>
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero h-screen flex items-center justify-center text-white" id="accueil">
+<div class="text-center px-4 max-w-4xl">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">Découvrez Pinet, perle du Languedoc</h1>
+<p class="text-xl md:text-2xl mb-8">Entre vignobles réputés et plages méditerranéennes, nos gîtes indépendants vous offrent un havre de paix au cœur de l'Hérault.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300" href="#gites">Nos hébergements</a>
+<a class="bg-white hover:bg-gray-100 text-amber-800 font-bold py-3 px-6 rounded-lg transition duration-300" href="#activites">Découvrir la région</a>
+</div>
+</div>
+</section>
+<!-- Region Presentation -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Pinet, cœur viticole du Languedoc</h2>
+<div class="w-24 h-1 bg-amber-700 mx-auto mb-6"></div>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Nichée entre mer et vignobles, Pinet est célèbre pour son Picpoul de Pinet, vin blanc frais et fruité. À seulement 20 minutes des plages et 30 minutes de Montpellier, c'est l'endroit idéal pour allier détente, gastronomie et découverte.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition duration-300">
+<i class="fas fa-wine-bottle text-5xl text-amber-700 mb-4"></i>
+<h3 class="text-xl font-semibold mb-3">Vignobles &amp; Dégustations</h3>
+<p class="text-gray-600">Découvrez les domaines viticoles alentours et dégustez les vins locaux, dont le fameux Picpoul de Pinet, lors de visites guidées.</p>
+</div>
+<div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition duration-300">
+<i class="fas fa-umbrella-beach text-5xl text-amber-700 mb-4"></i>
+<h3 class="text-xl font-semibold mb-3">Plages Méditerranéennes</h3>
+<p class="text-gray-600">À seulement 15km, les plages de Sète, Marseillan et Mèze vous attendent avec leurs eaux turquoises et leurs restaurants de poissons frais.</p>
+</div>
+<div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition duration-300">
+<i class="fas fa-archway text-5xl text-amber-700 mb-4"></i>
+<h3 class="text-xl font-semibold mb-3">Patrimoine &amp; Culture</h3>
+<p class="text-gray-600">Explorez les villages typiques comme Pézenas, les étangs de Thau ou l'abbaye de Valmagne, témoins d'une histoire riche.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gîtes Section -->
+<section class="py-16 bg-gray-50" id="gites">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Nos Gîtes à Pinet</h2>
+<div class="w-24 h-1 bg-amber-700 mx-auto mb-6"></div>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Trois hébergements indépendants, alliant charme traditionnel et confort moderne, au cœur des vignes héraultaises.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Gîte 1 -->
+<div class="gite-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Gîte La Vigneronne" class="w-full h-full object-cover" src="https://gestion-gites-pinet.netlify.app/IMG_20210407_105254.jpg"/>
+<div class="absolute top-4 right-4 bg-amber-700 text-white px-3 py-1 rounded-full text-sm font-semibold">À partir de 85€/nuit</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">La Vigneronne</h3>
+<div class="flex items-center text-gray-600 mb-4">
+<i class="fas fa-users mr-2"></i>
+<span class="mr-4">4 personnes</span>
+<i class="fas fa-home mr-2"></i>
+<span>2 chambres</span>
+</div>
+<p class="text-gray-600 mb-4">Ancienne maison de vigneron rénovée avec goût, terrasse ombragée et vue sur les vignes. Parfait pour les familles.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">WiFi</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Piscine</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Cuisine équipée</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Parking</span>
+</div>
+<a class="block w-full bg-amber-700 hover:bg-amber-800 text-white text-center py-2 px-4 rounded-lg transition duration-300" href="#reservation">Voir disponibilités</a>
+</div>
+</div>
+<!-- Gîte 2 -->
+<div class="gite-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Gîte Le Clos des Oliviers" class="w-full h-full object-cover" src="https://gestion-gites-pinet.netlify.app/IMG_20210407_105304.jpg"/>
+<div class="absolute top-4 right-4 bg-amber-700 text-white px-3 py-1 rounded-full text-sm font-semibold">À partir de 95€/nuit</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Le Clos des Oliviers</h3>
+<div class="flex items-center text-gray-600 mb-4">
+<i class="fas fa-users mr-2"></i>
+<span class="mr-4">2 personnes</span>
+<i class="fas fa-home mr-2"></i>
+<span>1 chambre</span>
+</div>
+<p class="text-gray-600 mb-4">Cottage romantique avec jardin privatif et spa extérieur. Décoration contemporaine et équipements haut de gamme.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">WiFi</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Spa</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Terrasse</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Climatisation</span>
+</div>
+<a class="block w-full bg-amber-700 hover:bg-amber-800 text-white text-center py-2 px-4 rounded-lg transition duration-300" href="#reservation">Voir disponibilités</a>
+</div>
+</div>
+<!-- Gîte 3 -->
+<div class="gite-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Gîte La Bastide" class="w-full h-full object-cover" src="https://gestion-gites-pinet.netlify.app/IMG_20210407_105142.jpg"/>
+<div class="absolute top-4 right-4 bg-amber-700 text-white px-3 py-1 rounded-full text-sm font-semibold">À partir de 120€/nuit</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">La Bastide</h3>
+<div class="flex items-center text-gray-600 mb-4">
+<i class="fas fa-users mr-2"></i>
+<span class="mr-4">6 personnes</span>
+<i class="fas fa-home mr-2"></i>
+<span>3 chambres</span>
+</div>
+<p class="text-gray-600 mb-4">Vaste maison de caractère avec piscine chauffée et grand jardin. Idéale pour les groupes ou les familles nombreuses.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">WiFi</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Piscine</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">BBQ</span>
+<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Lave-linge</span>
+</div>
+<a class="block w-full bg-amber-700 hover:bg-amber-800 text-white text-center py-2 px-4 rounded-lg transition duration-300" href="#reservation">Voir disponibilités</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Activities Section -->
+<section class="py-16 bg-white" id="activites">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">À voir &amp; À faire autour de Pinet</h2>
+<div class="w-24 h-1 bg-amber-700 mx-auto mb-6"></div>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Entre mer, vignobles et patrimoine, découvrez les richesses de l'Hérault lors de votre séjour.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Activity 1 -->
+<div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
+<img alt="Dégustation de vin" class="w-full h-48 object-cover" src="https://gestion-gites-pinet.netlify.app/images/agde.PNG"/>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Dégustation de vins</h3>
+<p class="text-gray-600 text-sm mb-3">Visitez les domaines viticoles de Pinet et dégustez le fameux Picpoul de Pinet, vin blanc local réputé.</p>
+<span class="text-xs text-amber-700 font-semibold">À 5 min</span>
+</div>
+</div>
+<!-- Activity 2 -->
+<div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
+<img alt="Canal du midi" class="w-full h-48 object-cover" src="https://gestion-gites-pinet.netlify.app/images/canal-du-midi.png"/>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Plages de Sète</h3>
+<p class="text-gray-600 text-sm mb-3">Détendez-vous sur les magnifiques plages de sable fin de Sète, à seulement 20 minutes en voiture.</p>
+<span class="text-xs text-amber-700 font-semibold">À 20 min</span>
+</div>
+</div>
+<!-- Activity 3 -->
+<div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
+<img alt="Pézenas" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1582731595126-65a3695a073a?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"/>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Village de Pézenas</h3>
+<p class="text-gray-600 text-sm mb-3">Explorez ce village classé avec ses ruelles médiévales, boutiques d'artisans et hôtels particuliers.</p>
+<span class="text-xs text-amber-700 font-semibold">À 15 min</span>
+</div>
+</div>
+<!-- Activity 4 -->
+<div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
+<img alt="Étang de Thau" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600679472829-6d4a3f5c0a66?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"/>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Étang de Thau</h3>
+<p class="text-gray-600 text-sm mb-3">Découvrez la faune et flore de cet étang salé, célèbre pour ses parcs à huîtres et ses villages de pêcheurs.</p>
+<span class="text-xs text-amber-700 font-semibold">À 25 min</span>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="inline-flex items-center text-amber-700 hover:text-amber-800 font-semibold" href="#">
+                    Voir toutes les activités
+                    <i class="fas fa-arrow-right ml-2"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-16 bg-gray-50" id="avis">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Ce que disent nos hôtes</h2>
+<div class="w-24 h-1 bg-amber-700 mx-auto mb-6"></div>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Découvrez les retours de nos voyageurs après leur séjour dans nos gîtes.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="testimonial-card p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="flex-shrink-0">
+<img alt="Sophie M." class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg"/>
+</div>
+<div class="ml-3">
+<p class="text-sm font-medium text-gray-900">Sophie M.</p>
+<div class="flex text-amber-500">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 italic">"Un séjour parfait dans le gîte La Vigneronne. L'emplacement est idéal pour visiter la région entre mer et vignobles. La maison est très bien équipée et la piscine était très appréciable. Nous reviendrons certainement!"</p>
+<p class="text-sm text-gray-500 mt-2">Août 2023</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="flex-shrink-0">
+<img alt="Pierre L." class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/men/45.jpg"/>
+</div>
+<div class="ml-3">
+<p class="text-sm font-medium text-gray-900">Pierre L.</p>
+<div class="flex text-amber-500">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 italic">"Le Clos des Oliviers est un véritable coup de cœur! Le spa extérieur après une journée de visite était divin. L'accueil était chaleureux avec une bouteille de Picpoul de Pinet en bienvenue. Nous recommandons vivement!"</p>
+<p class="text-sm text-gray-500 mt-2">Juin 2023</p>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="flex-shrink-0">
+<img alt="Élodie T." class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg"/>
+</div>
+<div class="ml-3">
+<p class="text-sm font-medium text-gray-900">Élodie T.</p>
+<div class="flex text-amber-500">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 italic">"La Bastide a largement dépassé nos attentes! Assez spacieuse pour nos 2 familles (6 personnes), avec une superbe piscine et un grand jardin. La décoration est soignée et l'emplacement parfait pour rayonner dans la région. Merci!"</p>
+<p class="text-sm text-gray-500 mt-2">Juillet 2023</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Form -->
+<section class="py-16 bg-white" id="reservation">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gray-50 rounded-xl shadow-md overflow-hidden">
+<div class="md:flex">
+<div class="md:w-1/2 bg-amber-700 p-8 text-white">
+<h2 class="text-2xl font-bold mb-4">Réservez votre séjour</h2>
+<p class="mb-6">Remplissez ce formulaire pour vérifier les disponibilités et obtenir un devis personnalisé pour votre séjour à Pinet.</p>
+<div class="flex items-center">
+<i class="fas fa-phone-alt mr-3"></i>
+<div>
+<p class="text-sm">Vous préférez téléphoner?</p>
+<p class="font-bold">06 71 21 74 66</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 p-8">
+<form action="https://script.google.com/macros/s/1t1BOJygv_UJwJJ1EVgm8eBUrf1dYFP9cjUqLW18GFb4/exec" id="bookingForm" method="POST">
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700 mb-1" for="gite">Gîte souhaité</label>
+<select class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="gite" name="gite">
+<option value="">Sélectionnez un gîte</option>
+<option value="vigneronne">La Vigneronne (4 pers.)</option>
+<option value="clos">Le Clos des Oliviers (2 pers.)</option>
+<option value="bastide">La Bastide (6 pers.)</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="arrival">Arrivée</label>
+<input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="arrival" name="arrival" type="date"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="departure">Départ</label>
+<input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="departure" name="departure" type="date"/>
+</div>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium text-gray-700 mb-1" for="guests">Nombre de personnes</label>
+<input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="guests" max="6" min="1" name="guests" type="number"/>
+</div><div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1" for="telephone">Téléphone</label><input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="telephone" name="telephone" required="True" type="tel"/></div><div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1" for="nom">Nom</label><input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="nom" name="nom" required="True" type="text"/></div><div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1" for="prenom">Prénom</label><input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="prenom" name="prenom" required="True" type="text"/></div><div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1" for="adresse">Adresse postale</label><input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="adresse" name="adresse" required="True" type="text"/></div><div class="mb-4"><label class="block text-sm font-medium text-gray-700 mb-1" for="email">Adresse mail</label><input class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="email" name="email" required="True" type="email"/></div>
+<div class="mb-6">
+<label class="block text-sm font-medium text-gray-700 mb-1" for="message">Message (facultatif)</label>
+<textarea class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="message" name="message" rows="2"></textarea>
+</div>
+<button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 px-4 rounded-md transition duration-300" type="submit">Vérifier la disponibilité</button>
+</form>
+</div>
+</div>
+</div>
+<!-- Availability Calendar -->
+<div class="mt-12">
+<h3 class="text-xl font-bold text-center mb-6">Calendrier de disponibilité</h3>
+<div class="availability-calendar bg-white rounded-lg shadow-md p-6">
+<div class="flex justify-between mb-4">
+<button class="px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300">
+<i class="fas fa-chevron-left"></i>
+</button>
+<h4 class="font-semibold">Septembre 2023</h4>
+<button class="px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300">
+<i class="fas fa-chevron-right"></i>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center">
+<div class="font-medium text-sm py-2">Lun</div>
+<div class="font-medium text-sm py-2">Mar</div>
+<div class="font-medium text-sm py-2">Mer</div>
+<div class="font-medium text-sm py-2">Jeu</div>
+<div class="font-medium text-sm py-2">Ven</div>
+<div class="font-medium text-sm py-2">Sam</div>
+<div class="font-medium text-sm py-2">Dim</div>
+<!-- Calendar days -->
+<div class="py-2"></div> <!-- Empty day -->
+<div class="py-2"></div> <!-- Empty day -->
+<div class="py-2"></div> <!-- Empty day -->
+<div class="py-2"></div> <!-- Empty day -->
+<div class="py-2"></div> <!-- Empty day -->
+<div class="py-2 available rounded-full">1</div>
+<div class="py-2 available rounded-full">2</div>
+<div class="py-2 available rounded-full">3</div>
+<div class="py-2 available rounded-full">4</div>
+<div class="py-2 available rounded-full">5</div>
+<div class="py-2 available rounded-full">6</div>
+<div class="py-2 available rounded-full">7</div>
+<div class="py-2 available rounded-full">8</div>
+<div class="py-2 available rounded-full">9</div>
+<div class="py-2 available rounded-full">10</div>
+<div class="py-2 available rounded-full">11</div>
+<div class="py-2 booked rounded-full">12</div>
+<div class="py-2 booked rounded-full">13</div>
+<div class="py-2 booked rounded-full">14</div>
+<div class="py-2 available rounded-full">15</div>
+<div class="py-2 available rounded-full">16</div>
+<div class="py-2 available rounded-full">17</div>
+<div class="py-2 available rounded-full">18</div>
+<div class="py-2 available rounded-full">19</div>
+<div class="py-2 available rounded-full">20</div>
+<div class="py-2 available rounded-full">21</div>
+<div class="py-2 available rounded-full">22</div>
+<div class="py-2 available rounded-full">23</div>
+<div class="py-2 available rounded-full">24</div>
+<div class="py-2 available rounded-full">25</div>
+<div class="py-2 available rounded-full">26</div>
+<div class="py-2 available rounded-full">27</div>
+<div class="py-2 available rounded-full">28</div>
+<div class="py-2 available rounded-full">29</div>
+<div class="py-2 available rounded-full">30</div>
+</div>
+<div class="flex justify-center mt-4 gap-4">
+<div class="flex items-center">
+<div class="w-4 h-4 bg-amber-700 rounded-full mr-2"></div>
+<span class="text-sm">Disponible</span>
+</div>
+<div class="flex items-center">
+<div class="w-4 h-4 bg-gray-300 rounded-full mr-2"></div>
+<span class="text-sm">Réservé</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-16 bg-gray-50" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Nous contacter</h2>
+<div class="w-24 h-1 bg-amber-700 mx-auto mb-6"></div>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Pour toute question ou demande d'information, n'hésitez pas à nous contacter.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<h3 class="text-xl font-bold mb-6">Informations de contact</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<i class="fas fa-map-marker-alt text-amber-700 mt-1"></i>
+</div>
+<div class="ml-3">
+<p class="text-sm font-medium text-gray-900">Adresse</p>
+<p class="text-sm text-gray-500">21 avenue de Pomerols, 34850 Pinet, France</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<i class="fas fa-phone-alt text-amber-700 mt-1"></i>
+</div>
+<div class="ml-3">
+<p class="text-sm font-medium text-gray-900">Téléphone</p>
+<p class="text-sm text-gray-500">06 71 21 74 66</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<i class="fas fa-envelope text-amber-700 mt-1"></i>
+</div>
+<div class="ml-3">
+<p class="text-sm font-medium text-gray-900">Email</p>
+<p class="text-sm text-gray-500">daniel.murria@wanadoo.fr</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="text-lg font-semibold mb-4">Horaires d'ouverture</h4>
+<div class="space-y-2">
+<div class="flex justify-between text-sm">
+<span class="font-medium">Lundi - Vendredi</span>
+<span>9h - 18h</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="font-medium">Samedi</span>
+<span>10h - 16h</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="font-medium">Dimanche</span>
+<span>Fermé</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<h3 class="text-xl font-bold mb-6">Envoyez-nous un message</h3>
+<form>
+<div class="grid grid-cols-1 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="name">Nom complet</label>
+<input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="email">Email</label>
+<input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="email" name="email" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="subject">Sujet</label>
+<select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="subject" name="subject">
+<option value="">Sélectionnez un sujet</option>
+<option value="reservation">Demande de réservation</option>
+<option value="information">Demande d'information</option>
+<option value="other">Autre</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="message">Message</label>
+<textarea class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-amber-500 focus:border-amber-500" id="message" name="message" rows="4"></textarea>
+</div>
+<div>
+<button class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 px-4 rounded-md transition duration-300" type="submit">Envoyer le message</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Map -->
+<div class="mt-12 bg-white rounded-lg shadow-md overflow-hidden">
+<iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.4778607312415!2d3.5085758043912563!3d43.39991845728451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1392a55698331%3A0x2bd6d30052ddf3a5!2zR8OudGVzIFLDqWdpbmE!5e0!3m2!1sfr!2sfr!4v1743942762559!5m2!1sfr!2sfr" style="border:0;" width="1230"></iframe>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-lg font-bold mb-4">Gîtes de Pinet</h3>
+<p class="text-gray-400">Location saisonnière de charme au cœur des vignobles de l'Hérault, entre mer et patrimoine.</p>
+<div class="flex mt-4 space-x-4">
+<a class="text-gray-400 hover:text-white" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-400 hover:text-white" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-gray-400 hover:text-white" href="#">
+<i class="fab fa-tripadvisor"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Liens rapides</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white" href="#accueil">Accueil</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#gites">Nos Gîtes</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#activites">À voir/faire</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#avis">Avis clients</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Nos gîtes</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white" href="#">Regina 1</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Regina 2</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Newsletter</h3>
+<p class="text-gray-400 mb-4">Abonnez-vous pour recevoir nos offres spéciales et actualités.</p>
+<form class="flex">
+<input class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800" placeholder="Votre email" type="email"/>
+<button class="bg-amber-700 hover:bg-amber-800 px-4 py-2 rounded-r-md" type="submit">
+<i class="fas fa-paper-plane"></i>
+</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">© 2023 Gîtes de Pinet. Tous droits réservés.</p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+<a class="text-gray-400 hover:text-white text-sm" href="#">Mentions légales</a>
+<a class="text-gray-400 hover:text-white text-sm" href="#">Politique de confidentialité</a>
+<a class="text-gray-400 hover:text-white text-sm" href="#">Conditions générales</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple script for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+            // In a real implementation, you would toggle a mobile menu here
+            mobileMenuButton.addEventListener('click', function() {
+                alert('Menu mobile à implémenter');
             });
-        };
-        
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-        
-        // Smooth scrolling pour les liens
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Fermer le menu mobile si ouvert
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
+            
+            // Simple form submission handler
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Formulaire soumis! En production, cela enverrait les données au serveur.');
+                });
             });
         });
     </script>
+<script>document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
+  fetch("https://script.google.com/macros/s/1t1BOJygv_UJwJJ1EVgm8eBUrf1dYFP9cjUqLW18GFb4/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(text => {
+    alert("Demande envoyée avec succès !");
+    form.reset();
+  })
+  .catch(error => {
+    alert("Erreur lors de l'envoi : " + error.message);
+  });
+});</script>
 </body>
 </html>
